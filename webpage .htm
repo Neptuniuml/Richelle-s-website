@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Richelle Joice A. Jimenez">
+    <meta name="location" content="San Lorenzo, Gapan City, Nueva Ecija">
+    <meta name="description" content="RJ's Products - Delicious Pasta, Hearty Dishes, and Sweet Desserts. Order now!">
+    <meta name="keywords" content="Pasta, Dish, Desserts, RJ's Products, Food Delivery, Catering">
+    
+    <title>RJ's Products</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Lora', serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #ffbbf0;
+        }
+
+        /* Header */
+        header {
+            background-color: #ffd9e6;
+            color: #333;
+            padding: 15px;
+            font-size: 24px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        main {
+            margin-top: 50px;
+        }
+
+        /* Section Titles */
+        .section-title {
+            color: #ff0066;
+            font-size: 28px;
+            margin-top: 30px;
+        }
+
+        /* Product List */
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product-card {
+            background: white;
+            padding: 15px;
+            width: 220px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Pricing List */
+        .price-list {
+            list-style-type: none;
+            padding: 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #ff0066;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ffd9e6;
+            color: #333;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
+    </style>
+
+    <script>
+        function submitOrder() {
+            let name = document.getElementById("name").value;
+            let message = document.getElementById("message").value;
+
+            if (name && message) {
+                alert(🎉 Thank you, ${name}! We have received your order inquiry.);
+            } else {
+                alert("⚠ Please fill out all fields.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h4>RJ's Products</h4>
+    </header>
+
+    <main>
+        <h1>🎉 Welcome to RJ's Products 🎉</h1>
+
+        <!-- Pasta Section -->
+        <section>
+            <h2 class="section-title">🍝 Pasta Menu 🍝</h2>
+            <div class="product-container">
+                <div class="product-card">Carbonara</div>
+                <div class="product-card">Pancit</div>
+                <div class="product-card">Malabon</div>
+                <div class="product-card">Palabok</div>
+                <div class="product-card">Spaghetti</div>
+                <div class="product-card">Baked Mac</div>
+            </div>
+            <ul class="price-list">
+                <li>Small Bilao - ₱500</li>
+                <li>Medium Bilao - ₱800</li>
+                <li>Large Bilao -  ₱1,000</li>
+                <li>Extra Large Bilao - ₱1,200</li>
+            </ul>
+        </section>
+
+        <!-- Dish Section -->
+        <section>
+            <h2 class="section-title">🥘 Dish Menu 🥘</h2>
+            <div class="product-container">
+                <div class="product-card">Lengua</div>
+                <div class="product-card">Menudo</div>
+                <div class="product-card">Kare-kare</div>
+                <div class="product-card">Beef Broccoli</div>
+                <div class="product-card">Kaldereta</div>
+                <div class="product-card">Chicken Pastil</div>
+                <div class="product-card">Cordon Bleu</div>
+                <div class="product-card">Fish Fillet</div>
+                <div class="product-card">Chicken Fillet</div>
+            </div>
+            <ul class="price-list">
+                <li>Small Container - ₱500</li>
+                <li>Medium Container - ₱800</li>
+                <li>Large Container - ₱1,200</li>
+                <li>Extra Large Container - ₱1,500</li>
+            </ul>
+        </section>
+
+        <!-- Dessert Section -->
+        <section>
+            <h2 class="section-title">🍮 Sweet Desserts 🍮</h2>
+            <div class="product-container">
+                <div class="product-card">Coffee Jelly</div>
+                <div class="product-card">Fruit Salad</div>
+                <div class="product-card">Buko Pandan</div>
+                <div class="product-card">Leche Flan</div>
+                <div class="product-card">Gelatin</div>
+                <div class="product-card">Mango Graham</div>
+                <div class="product-card">Gelatin</div>
+                <div class="product-card">Mango Tapioca</div>
+                
+            </div>
+            <ul class="price-list">
+                <li>Small Container - ₱50</li>
+                <li>Medium Container - ₱80</li>
+                <li>Large Container - ₱110</li>
+                <li>Extra Large Container - ₱150</li>
+            </ul>
+        </section>
+
+        <!-- Business History -->
+        <section>
+            <h2 class="section-title">📜 Our Story</h2>
+            <p>RJ's Products started during the pandemic as a source of income. Because many businesses closed and jobs were hard to find, Jocelyn Jimenez (the owner) decided to sell products to earn money. At first, it was a small business selling basic and homemade items. But because the products were good and affordable, more people started buying. Over time, RJ's Products grew, offering more items and gaining many loyal customers. What started as a simple idea became a successful business, showing that hard work and determination can turn challenges into opportunities.</p>
+        </section>
+
+        <h3>📍 Located @ San Lorenzo, Gapan City, Nueva Ecija</h3>
+
+       <!-- Contact Form -->
+<section class="contact-form">
+    <h2>📩 Contact Us</h2>
+    <form onsubmit="event.preventDefault(); submitOrder();">
+        <input type="text" id="name" placeholder="Your Name" required><br>
+        <input type="email" id="email" placeholder="Your Email" required><br>
+        <input type="tel" id="phone" placeholder="Your Contact Number" required><br>
+        <input type="text" id="address" placeholder="Your Address" required><br>
+        <textarea id="message" rows="4" placeholder="Your Message and Order"></textarea><br>
+        <button class="submit-btn" type="submit">Submit</button>
+    </form>
+</section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 RJ's Products. Thank you for supporting us! 💖</p>
+    </footer>
+</body>
+</html>
+
